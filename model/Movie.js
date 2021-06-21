@@ -8,7 +8,7 @@ const sequelize = new Sequelize('postgres', 'postgres', 'mervine@21', {
 
 const Movie = sequelize.define('Movie', {
 
-  id: {
+  movieId: {
     type: DataTypes.STRING,
     allowNull: false,
     primaryKey: true
@@ -23,7 +23,7 @@ const Movie = sequelize.define('Movie', {
  length:{
     type: DataTypes.STRING,
  },
- actor:{
+ actors:{
     type: DataTypes.STRING,
  },
 
